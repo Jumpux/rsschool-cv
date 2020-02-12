@@ -81,4 +81,16 @@ module.exports = function makeExchange(currency) {
 }
 ```
 
+## Experience
+I worked at Russian Freelance for about six months, now for more than six months I have been working with Moscow IT companies on a remote basis.
 
+At the moment I am actively studying Javascript and React
+
+## Education
+
+Vocational education in software engineering.<br>
+HTML Academy Html, Css<br>
+Hexlet JS
+## My english
+
+I can read the documentation and can understand and use frequently-used everyday expressions as well as simple phrases to meet immediate needs.
