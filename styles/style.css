@@ -1,0 +1,298 @@
+/*SITE STYLES*/
+.title {
+    transform: skew(-15deg, 0deg);
+    background: #571b32;
+    width: 110%;
+    margin-left: -45px;
+}
+
+.title span {
+    display: inline-block;
+    transform: skew(15deg, 0deg);
+    padding: 10px 50px;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.background-block {
+    background: #e1e1e1;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+#about-me, #skills, #code-examples, #experience, #education, #english {
+    margin-bottom: 100px;
+}
+
+.block-text {
+    padding: 50px 30px;
+}
+
+/*SITE STYLES*/
+
+/*#ABOUT-ME*/
+#about-me {
+    margin-top: 20px;
+}
+
+#about-me .avatar {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 20px;
+    transition: transform 5s;
+    box-shadow: 0 0 0 0 black;
+}
+
+#about-me .avatar:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 20px 0 black;
+}
+
+#about-me .about-me-information {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about-me .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#about-me .information-text {
+    padding: 20px 20px 0;
+}
+
+#about-me .information-blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px 20px;
+}
+
+#about-me .information .information-block span {
+    font-weight: 800;
+}
+
+/*#ABOUT-ME*/
+
+/*#SKILLS*/
+#skills .skill-list {
+    padding: 50px 0;
+    width: 70%;
+    margin: auto;
+}
+
+#skills .progress-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#skills .progress-bar {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+}
+
+#skills .progress-bar > span {
+    display: block;
+    height: 100%;
+    background-color: #571b32;
+}
+
+#skills #html-progress,
+#skills #css-progress {
+    width: 90%;
+    animation-name: html-css;
+    animation-duration: 2s;
+}
+
+#skills #js-progress,
+#skills #react-progress,
+#skills #wp-progress {
+    width: 40%;
+    animation-name: js-react-wp;
+    animation-duration: 2s;
+}
+
+#skills #angular-progress,
+#skills #vue-progress {
+    width: 20%;
+    animation-name: angular-vue;
+    animation-duration: 2s;
+}
+
+#skills #git-progress,
+#skills #psd-progress {
+    width: 80%;
+    animation-name: git-psd;
+    animation-duration: 2s;
+}
+
+#skills #bitrix-progress {
+    width: 60%;
+    animation-name: bitrix;
+    animation-duration: 2s;
+}
+
+/*#SKILLS*/
+
+/*#CODE-EXAMPLES*/
+.code {
+    padding: 30px;
+}
+
+.code pre {
+    background: #1d1e22;
+    color: #fff;
+}
+
+.code-orange {
+    color: #CC7832;
+}
+
+.code-yellow {
+    color: #FFC66D;
+}
+
+.code-blue {
+    color: #6897BB;
+}
+
+.code-purple {
+    color: #9876AA;
+}
+
+.code:nth-child(3) {
+    padding: 0 30px;
+}
+
+/*#CODE-EXAMPLES*/
+
+/*HEADER*/
+header .main-navbar {
+    display: flex;
+    z-index: 999;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+header .main-navbar li {
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    color: #fff;
+    background-color: #571b32;
+    text-align: center;
+}
+
+header .main-navbar li:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 70%;
+    top: 15px;
+    left: 0;
+    background: #fff;
+}
+
+header .main-navbar li:first-child:before {
+    display: none;
+}
+
+header .main-navbar li:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+header .main-navbar li:last-child {
+    margin-right: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header .author-info {
+    padding-top: 25px;
+}
+
+
+header .author-info h2 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    line-height: 40px;
+}
+
+header .author-info p {
+    text-transform: uppercase;
+    padding: 4px;
+}
+
+/*HEADER*/
+
+@keyframes html-css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes js-react-wp {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes angular-vue {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes git-psd {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes bitrix {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+.animate {
+    animation-name: animate;
+    animation-duration: 2s;
+}
+
+@keyframes animate {
+    0% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
